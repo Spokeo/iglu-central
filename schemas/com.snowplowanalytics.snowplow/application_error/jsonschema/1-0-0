@@ -1,15 +1,29 @@
 {
   "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
-  "description": "Schema for an application crash",
+  "description": "Schema for an application error",
   "self": {
     "vendor": "com.snowplowanalytics.snowplow",
-    "name": "application_crash",
+    "name": "application_error",
     "format": "jsonschema",
     "version": "1-0-0"
   },
 
   "type": "object",
   "properties": {
+    "progLang": {
+      "enum": [ 
+        "JAVA",
+        "SCALA",
+        "RUBY",
+        "GOLANG",
+        "JAVASCRIPT",
+        "PHP",
+        "PYTHON",
+        "OBJC",
+        "CPP",
+        "CSHARP"
+      ]
+    },
     "message": {
       "type": "string"
     },
