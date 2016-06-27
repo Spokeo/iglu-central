@@ -10,7 +10,7 @@
 
   "type": "object",
   "properties": {
-    "progLang": {
+    "programmingLanguage": {
       "enum": [ 
         "JAVA",
         "SCALA",
