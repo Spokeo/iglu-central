@@ -1,0 +1,29 @@
+{
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "description": "Schema for a flow visit event",
+  "self": {
+    "vendor": "com.spokeo",
+    "name": "flow_visit",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+  
+  "type": "object",
+  "properties": {
+    "flow": {
+      "type": "string"
+    },
+    "campaign_code": {
+      "type": "string"
+    },
+    "device_type": {
+      "type": "string"
+    },
+    "day": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": ["flow", "day"],
+  "additionalProperties": false
+}
